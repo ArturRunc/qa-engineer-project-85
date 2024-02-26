@@ -12,6 +12,10 @@
   status: pass
 
 - summary: |
+    Подтверждение почты при регистрации на https://codebattle.hexlet.io
+  status: fail
+
+- summary: |
     Проверка авторизации с помощью Github
   status: pass
 
