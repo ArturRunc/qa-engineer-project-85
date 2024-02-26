@@ -17,6 +17,24 @@
     Пользователь должен зайти в систему
 
 - summary: |
+    Подтверждение почты при регистрации на https://codebattle.hexlet.io
+  requirement: |
+    При регистрации пользователь должен подвердить регистрацию через указанную почту 
+  prerequisites: |
+    Открыта страница https://codebattle.hexlet.io/
+  test-data: |
+    Nickname = CACHAN
+    Email = arturrunc294@gmail.com
+    Password = ggosaoal73
+    Password conformation = ggosaoal73
+  steps:
+  - Нажать на Sing up
+  - Вводим псевдоним, электронную почту, пароль, подтверждение пароля
+  - Нажимаем кнопку Submit
+  expected-result: |
+    Пользователю должно прийти сообщение на почту с подтверждением о регистрации 
+
+- summary: |
     Проверка входа пользователя с несуществующими логином и паролем
   requirement: |
     При неверном вводе логине и пароля пользователь не должен войти в систему
