@@ -8,6 +8,10 @@
   status: fail
 
 - summary: |
+    Неуспешная проверка входа с несуществующими логином и паролем 
+  status: fail
+
+- summary: |
     Проверка авторизации с помощью Github
   status: pass
 
