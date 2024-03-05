@@ -567,28 +567,6 @@
    Изменился список игроков на лидеров месяца
 
 - summary: |
-   Изменение настроек профиля 
-  requirement: |
-   Пользователь может изменить Your name, Your weapon,Your clan, Select sound type и Select sound level 
-  prerequisites:
-   Открыто лобби пользователя 
-  test-data: |
-   Empty
-  steps:
-   - Нажать на иконку пользователя
-   - Нажать settings
-   - В поле Your name удаляем qwerty123
-   - В поле Your name пишем Artur
-   - Нажать на поле Your weapon и выбрать cpp
-   - В поле Your clan вводим QWERTY
-   - В графе Select sound type выбераем Silent
-   - Ползунок Select sound level отводим до конца в право
-   - Нажать save
-   - Обновиить страницу 
-  expected-result: |
-   Измененные данные сохранены 
-
-- summary: |
    Изменение Your name в настроеках профиля 
   requirement: |
    Пользователь может изменить Your name
