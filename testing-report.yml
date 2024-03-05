@@ -24,7 +24,7 @@
   status: pass
   
 - summary: |
-   Проверрка востоновления пароля  
+   Проверка восстановления пароля  
   status: pass
 
 - summary: |
@@ -56,7 +56,7 @@
   status: pass
 
 - summary: |
-    Проверка смены языка програмирования во время игры
+    Проверка смены языка программирования во время игры
   status: pass
 
 - summary: |
@@ -64,7 +64,7 @@
   status: pass
 
 - summary: |
-    Проверка завершения игры по истечению времяни 
+    Проверка завершения игры по истечению времени 
   status: pass
 
 - summary: |
@@ -92,7 +92,7 @@
   status: pass
 
 - summary: |
-    Проверка поиска и просотра в истории сражений 
+    Проверка поиска и просмотра в истории сражений 
   status: pass
 
 - summary: |
@@ -144,21 +144,20 @@
   status: pass
 
 - summary: |
-      Проверка изменение Your name в настроеках профиля 
+      Проверка изменение Your name в настройках профиля 
   status: pass
 
 - summary: |
-      Проверка изменение Your weapon в настроеках профиля 
+      Проверка изменение Your weapon в настройках профиля 
   status: pass  
 
 - summary: |
-      Проверка изменение Your clan в настроеках профиля 
+      Проверка изменение Your clan в настройках профиля 
   status: fail 
 
 - summary: |
-      Проверка изменение Select sound type в настроеках профиля 
+      Проверка изменение Select sound type в настройках профиля 
   status: pass 
 
 - summary: |
-      Проверка изменение Select sound level в настроеках профиля 
-  status: pass 
+      Проверка изменение Select sound level в настройках профиля 
