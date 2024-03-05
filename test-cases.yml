@@ -478,11 +478,11 @@
    Name = tournament №1
     Type = individual
     Description = 1234567890-qwertyuiop[]
-    Starts at (Asia/Almaty) = 05.03.2024 09:20
+    Starts at (Asia/Almaty) = 05.03.2024 12:44
     Access type = public
     Task strategy = game
     Use chat = no
-    Task provider = le
+    Task provider = task_pack
     Level = easy
     Players limit = 16384
     Default language = php
@@ -496,4 +496,184 @@
    - Нажать Сreate
   expected-result: |
    Открывается страница с ожиданием начала турнира
+
+- summary: |
+   Поиск и просмотр профиля пользователя
+  requirement: |
+   Пользователь может найти и ознокомится с профилям другого пользователя
+  prerequisites:
+   Открыто лобби пользователя 
+  test-data: |
+   Empty
+  steps:
+   - Нажать TOP list 
+   - В окено поиска ввести CACHAN
+   - Нажать на иконку игрока 
+  expected-result: |
+   Открылся пролфиль пользователя с показателями статистики,рейтинга и активности 
    
+- summary: |
+   Просмотр таблици лидеров месяца в лобби пользователя
+  requirement: |
+   Пользователь может просмотреть лидеров месяца
+  prerequisites:
+   Открыто лобби пользователя 
+  test-data: |
+   Таблица показывает лидеров недели 
+  steps:
+   - Правее от таблици лидеров нажать на month
+  expected-result: |
+   Изменился список игроков 
+
+- summary: |
+   Просмотр таблици лидеров недели в лобби пользователя 
+  requirement: |
+   Пользователь может просмотреть лидеров недели 
+  prerequisites:
+   Открыто лобби пользователя 
+  test-data: |
+   Таблица показывает лидеров месяца
+  steps:
+   - Правее от таблици лидеров нажать на week
+  expected-result: |
+   Изменился список игроков
+
+- summary: |
+   Просмотр таблици лидеров недели через топ лист 
+  requirement: |
+   Пользователь может просмотреть лидеров недели через топ лист
+  prerequisites:
+   Открыто лобби пользователя 
+  test-data: |
+   Empty
+  steps:
+   - Нажать TOP list
+   - Нажать weekly
+  expected-result: |
+   Изменился список игроков на лидеров недели 
+   
+- summary: |
+   Просмотр таблици лидеров месяца через топ лист 
+  requirement: |
+   Пользователь может просмотреть лидеров месяца через топ лист
+  prerequisites:
+   Открыто лобби пользователя 
+  test-data: |
+   Empty
+  steps:
+   - Нажать TOP list
+   - Нажать month
+  expected-result: |
+   Изменился список игроков на лидеров месяца
+
+- summary: |
+   Изменение настроек профиля 
+  requirement: |
+   Пользователь может изменить Your name, Your weapon,Your clan, Select sound type и Select sound level 
+  prerequisites:
+   Открыто лобби пользователя 
+  test-data: |
+   Empty
+  steps:
+   - Нажать на иконку пользователя
+   - Нажать settings
+   - В поле Your name удаляем qwerty123
+   - В поле Your name пишем Artur
+   - Нажать на поле Your weapon и выбрать cpp
+   - В поле Your clan вводим QWERTY
+   - В графе Select sound type выбераем Silent
+   - Ползунок Select sound level отводим до конца в право
+   - Нажать save
+   - Обновиить страницу 
+  expected-result: |
+   Измененные данные сохранены 
+
+- summary: |
+   Изменение Your name в настроеках профиля 
+  requirement: |
+   Пользователь может изменить Your name
+  prerequisites:
+   Открыто лобби пользователя 
+   Открыт DevTools
+  test-data: |
+   Empty
+  steps:
+   - Нажать на иконку пользователя
+   - Нажать settings
+   - В поле Your name удаляем qwerty123
+   - В поле Your name пишем Artur
+   - Нажать save
+   - Обновиить страницу 
+  expected-result: |
+   Измененные данные сохранены 
+
+- summary: |
+   Изменение Your weapon в настроеках профиля 
+  requirement: |
+   Пользователь может изменить Your weapon
+   Открыто лобби пользователя 
+   Открыт DevTools
+  test-data: |
+   Empty
+  steps:
+   - Нажать на иконку пользователя
+   - Нажать settings
+   - Нажать на поле Your weapon и выбрать cpp
+   - Нажать save
+   - Обновиить страницу 
+  expected-result: |
+   Измененные данные сохранены 
+
+- summary: |
+   Изменение Your clan в настроеках профиля 
+  requirement: |
+   Пользователь может изменить Your clan 
+  prerequisites:
+   Открыто лобби пользователя
+   Открыт DevTools
+  test-data: |
+   Empty
+  steps:
+   - Нажать на иконку пользователя
+   - Нажать settings
+   - В поле Your clan вводим QWERTY
+   - Нажать save
+   - Обновиить страницу 
+  expected-result: |
+   Измененные данные сохранены 
+
+- summary: |
+   Изменение Select sound type в настроеках профиля 
+  requirement: |
+   Пользователь может изменить Select sound type 
+  prerequisites:
+   Открыто лобби пользователя 
+   Открыт DevTools
+  test-data: |
+   Empty
+  steps:
+   - Нажать на иконку пользователя
+   - Нажать settings
+   - В графе Select sound type выбераем Silent
+   - Нажать save
+   - Обновиить страницу 
+  expected-result: |
+   Измененные данные сохранены 
+
+- summary: |
+   Изменение Select sound level в настроеках профиля 
+  requirement: |
+   Пользователь может изменить Select sound level 
+  prerequisites:
+   Открыто лобби пользователя 
+    Открыт DevTools
+  test-data: |
+   Empty
+  steps:
+   - Нажать на иконку пользователя
+   - Нажать settings
+   - Ползунок Select sound level отводим до конца в право
+   - Нажать save
+   - Обновиить страницу 
+  expected-result: |
+   Измененные данные сохранены 
