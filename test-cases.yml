@@ -467,3 +467,33 @@
    - Смотрим показатель LOAD
   expected-result: |
    Время загрузки не превышает 5 секунд   
+
+- summary: |
+   Проверка создания турнира
+  requirement: |
+   Пользователь имеет возможность создовать турнир
+  prerequisites:
+   Открыто лобби аользователя
+  test-data: |
+   Name = tournament №1
+    Type = individual
+    Description = 1234567890-qwertyuiop[]
+    Starts at (Asia/Almaty) = 05.03.2024 09:20
+    Access type = public
+    Task strategy = game
+    Use chat = no
+    Task provider = le
+    Level = easy
+    Players limit = 16384
+    Default language = php
+    Match timeout seconds = 100
+    Break duration seconds = 100
+  steps:
+   - Нажать на эконку пользователя
+   - Нажать Tournaments
+   - Проскролить в низ 
+   - Ввести параметры турнира 
+   - Нажать Сreate
+  expected-result: |
+   Открывается страница с ожиданием начала турнира
+   
