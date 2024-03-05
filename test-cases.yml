@@ -611,6 +611,7 @@
    Изменение Your weapon в настроеках профиля 
   requirement: |
    Пользователь может изменить Your weapon
+  prerequisites:
    Открыто лобби пользователя 
    Открыт DevTools
   test-data: |
