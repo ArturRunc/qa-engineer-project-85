@@ -162,3 +162,15 @@
 - summary: |
       Проверка изменение Select sound level в настройках профиля 
   status: pass    
+
+- summary: |
+      Просмотр кода соперника во время игры
+  status: pass    
+
+- summary: |
+      Проверка ожидание 2-го игрока 
+  status: pass    
+
+- summary: |
+      Проверка просмотра терминала после завершения игры
+  status: pass    
